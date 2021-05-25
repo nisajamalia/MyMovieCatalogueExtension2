@@ -1,7 +1,8 @@
 package com.nisa.mymoviecatalogueextension
 
-//import barissaglam.client.movieapp.di.DaggerAppComponent
-import com.facebook.stetho.BuildConfig
+import androidx.viewbinding.BuildConfig
+import com.nisa.mymoviecatalogueextension.di.Dagger
+
 import com.facebook.stetho.Stetho
 import dagger.android.AndroidInjector
 import dagger.android.DaggerApplication

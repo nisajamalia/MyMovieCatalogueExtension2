@@ -1,4 +1,4 @@
-package com.nisa.mymoviecatalogueextension.presentation.search
+ package com.nisa.mymoviecatalogueextension.presentation.search
 
 import android.graphics.Color
 import android.transition.TransitionInflater

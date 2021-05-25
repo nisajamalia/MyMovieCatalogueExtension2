@@ -4,6 +4,7 @@ import android.app.Application
 import com.facebook.stetho.okhttp3.BuildConfig
 import com.facebook.stetho.okhttp3.StethoInterceptor
 import com.google.gson.GsonBuilder
+import com.nisa.mymoviecatalogueextension.BuildConfig.API_URL
 import com.nisa.mymoviecatalogueextension.base.di.ApiInterceptor
 import com.nisa.mymoviecatalogueextension.data.service.RemoteApiService
 import com.nisa.mymoviecatalogueextension.util.DateDeserializer
@@ -30,10 +31,17 @@ class NetworkModule {
     fun provideRetrofitBuilder(): Retrofit.Builder = Retrofit.Builder()
 
     @Provides
+//    @Singleton
+//    fun provideOkHttpClientBuilder(): OkHttpClient.Builder = OkHttpClient.Builder()
+//        .readTimeout(15.toLong(), TimeUnit.SECONDS)
+//        .connectTimeout(15.toLong(), TimeUnit.SECONDS)
+
+
     @Singleton
     fun provideOkHttpClientBuilder(): OkHttpClient.Builder = OkHttpClient.Builder()
         .readTimeout(15.toLong(), TimeUnit.SECONDS)
         .connectTimeout(15.toLong(), TimeUnit.SECONDS)
+
 
 
     @Provides

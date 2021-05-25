@@ -25,7 +25,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintWidth_percent="0.6"
-            app:strokeColor="@color/gray9ba0a6" />
+            app:strokeColor="@color/grey" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </layout>

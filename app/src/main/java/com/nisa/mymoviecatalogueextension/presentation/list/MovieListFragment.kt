@@ -4,7 +4,6 @@ import androidx.lifecycle.observe
 import androidx.navigation.fragment.findNavController
 import androidx.paging.PagedList
 import androidx.recyclerview.widget.GridLayoutManager
-import barissaglam.client.movieapp.presentation.list.MovieListFragmentDirections
 import com.nisa.mymoviecatalogueextension.R
 import com.nisa.mymoviecatalogueextension.base.view.BaseFragment
 import com.nisa.mymoviecatalogueextension.data.model.uimodel.MovieViewItem
@@ -29,10 +28,10 @@ class MovieListFragment : BaseFragment<FragmentMovieListBinding, MovieListViewMo
         adapter.onMovieItemClick = ::onMovieItemClick
     }
 
-//    override fun setUpViewModelStateObservers() {
-//        viewModel.getMovieList().observe(viewLifecycleOwner, ::onMovieListLoaded)
-//        viewModel.liveDataViewState_.observe(viewLifecycleOwner, ::setViewState)
-//    }
+    override fun setUpViewModelStateObservers() {
+        viewModel.getMovieList().observe(viewLifecycleOwner, ::onMovieListLoaded)
+        viewModel.liveDataViewState_.observe(viewLifecycleOwner, ::setViewState)
+    }
 
     private fun setViewState(fragmentViewState: MovieListFragmentViewState) {
         binding.viewState = fragmentViewState

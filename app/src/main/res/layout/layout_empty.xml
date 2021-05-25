@@ -19,7 +19,7 @@
         android:layout_marginTop="@dimen/_8dp"
         android:gravity="center"
         android:text="Something went wrong"
-        android:textColor="@color/gray9ba0a6"/>
+        android:textColor="@color/grey"/>
 
 
 

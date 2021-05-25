@@ -35,22 +35,12 @@
             android:gravity="center"
             android:maxLength="10"
             android:text="@{cast.name}"
-            android:textColor="@color/gray9ba0a6"
+            android:textColor="@color/grey"
             android:textSize="@dimen/textSizeSmall"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/imageViewActor"
             tools:text="Here is name" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageButton"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="23dp"
-        android:layout_marginStart="@dimen/_8dp"
-        android:foregroundGravity="center"
-        android:src="@color/black"/>
 
 </layout>

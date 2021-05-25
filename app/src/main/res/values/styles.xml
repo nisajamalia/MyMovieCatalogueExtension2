@@ -36,7 +36,6 @@
 
     <style name="SearchViewTheme">
         <item name="editTextBackground">@android:color/transparent</item>
-        <item name="android:textColorHint">@color/gray999ea4</item>
         <item name="android:textSize">@dimen/textSizeNormal</item>
     </style>
 

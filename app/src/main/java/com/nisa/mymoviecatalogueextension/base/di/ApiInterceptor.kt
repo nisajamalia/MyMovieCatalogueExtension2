@@ -1,5 +1,6 @@
 package com.nisa.mymoviecatalogueextension.base.di
 
+import com.nisa.mymoviecatalogueextension.BuildConfig
 import okhttp3.Interceptor
 import okhttp3.Response
 import javax.inject.Inject

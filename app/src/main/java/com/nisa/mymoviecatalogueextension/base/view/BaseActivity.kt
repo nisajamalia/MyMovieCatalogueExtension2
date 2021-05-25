@@ -37,6 +37,7 @@ abstract class BaseActivity<DB : ViewDataBinding, VM : BaseViewModel> : DaggerAp
         binding = DataBindingUtil.setContentView(this, layoutResourceId)
         binding.lifecycleOwner = this
 
+
         intent?.extras?.let {
             viewModel.handleIntent(it)
             it.clear()

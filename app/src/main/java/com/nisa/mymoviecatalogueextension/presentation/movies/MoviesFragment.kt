@@ -36,6 +36,7 @@ class MoviesFragment : BaseFragment<FragmentMoviesBinding, MoviesViewModel>() {
     }
 
     private fun onMoreButtonClick(movieListPageType: MovieListPageType) {
+
         findNavController().navigate(MoviesFragmentDirections.actionMoviesFragmentToMovieListFragment(pageType = movieListPageType))
     }
 

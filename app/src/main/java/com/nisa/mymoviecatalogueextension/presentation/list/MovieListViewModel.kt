@@ -30,20 +30,21 @@ class MovieListViewModel @Inject constructor(
         updateUIState(showLoading = true)
     }
 
-//    override fun handleIntent(extras: Bundle) {
-//        val args = MovieListFragmentArgs.fromBundle(extras)
-//        this.liveDataViewState.value = MovieListFragmentViewState(pageType = args.pageType, searchQuery = args.searchQuery)
-//    }
-//
-//    fun getMovieList(): LiveData<PagedList<MovieViewItem>> {
-//        val config = PagedList.Config.Builder()
-//            .setPageSize(20)
-//            .setInitialLoadSizeHint(20)
-//            .setPrefetchDistance(5)
-//            .setEnablePlaceholders(true)
-//            .build()
-//        return initPagedListBuilder(config).build()
-//    }
+    override fun handleIntent(extras: Bundle) {
+        val args = MovieListFragmentArgs.fromBundle(extras)
+        this.liveDataViewState.value = MovieListFragmentViewState(pageType = args.pageType, searchQuery = args.searchQuery)
+    }
+
+
+    fun getMovieList(): LiveData<PagedList<MovieViewItem>> {
+        val config = PagedList.Config.Builder()
+            .setPageSize(20)
+            .setInitialLoadSizeHint(20)
+            .setPrefetchDistance(5)
+            .setEnablePlaceholders(true)
+            .build()
+        return initPagedListBuilder(config).build()
+    }
 
     private fun initPagedListBuilder(config: PagedList.Config): LivePagedListBuilder<Int, MovieViewItem> {
         val dataSourceFactory = object : DataSource.Factory<Int, MovieViewItem>() {

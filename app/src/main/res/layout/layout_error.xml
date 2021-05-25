@@ -20,7 +20,7 @@
         android:layout_marginTop="8dp"
         android:gravity="center"
         android:text="Something went wrong."
-        android:textColor="@color/gray9ba0a6" />
+        android:textColor="@color/grey" />
 
 
     <com.google.android.material.button.MaterialButton
@@ -28,7 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:backgroundTint="@color/gray9ba0a6"
+        android:backgroundTint="@color/grey"
         android:minWidth="120dp"
         android:text="Retry"
         android:textColor="@color/black"
